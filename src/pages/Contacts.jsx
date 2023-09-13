@@ -18,7 +18,7 @@ const Contacts = () => {
     <Container>
         {/* top and head part */}
       <SubHeading className="text-49 pb-2.5" text="Contacts"/>
-      <Flex className="mb-32"> <Link className='mr-2' to={pageName=="Home"?"/":`${pageName.toLowerCase()}`}>{pageName}</Link>\ <Breadcrumb>{window.location.pathname.replace(("/"),(" ")).replace(("-"),(" "))}</Breadcrumb>
+      <Flex className="mb-32"> <Link className='mr-2' to={pageName=="Home"?"/":`/${pageName.toLowerCase()}`}>{pageName}</Link>\ <Breadcrumb>{window.location.pathname.replace(("/"),(" ")).replace(("-"),(" "))}</Breadcrumb>
       </Flex>
 
       {/* form fillup part */}

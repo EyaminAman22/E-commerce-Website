@@ -17,7 +17,7 @@ const Checkout = () => {
     <Container>
         {/* head and top */}
       <SubHeading className="text-49 pb-2.5" text="Checkout"/>
-      <Flex className="pb-32"> <Link className='mr-2' to={pageName=="Home"?"/":`${pageName.toLowerCase()}`}>{pageName}</Link>\ <Breadcrumb>{window.location.pathname.replace(("/"),(" ")).replace(("-"),(" "))}</Breadcrumb>
+      <Flex className="pb-32"> <Link className='mr-2' to={pageName=="Home"?"/":`/${pageName.toLowerCase()}`}>{pageName}</Link>\ <Breadcrumb>{window.location.pathname.replace(("/"),(" ")).replace(("-"),(" "))}</Breadcrumb>
       </Flex>
       <p className='font-dm font-normal text-base mb-28 leading-8 text-grey-white w-1/2'>Have a coupon? <span className='font-dm font-normal text-base text-black'>Click here to enter your code</span></p>
 

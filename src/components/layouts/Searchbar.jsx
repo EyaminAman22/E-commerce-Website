@@ -23,12 +23,12 @@ const Searchbar = () => {
                 <FaBars/>Shop by Category
             </Flex>
             <div className='w-3/5 justify-center relative items-center'>
-                <Input className="w-full py-4 px-5 mb-0" placeholder="Search Products" />
+                <input type="text" placeholder='Search Products' className='w-full py-4 px-5 m-0 w-full border-b border-solid border-offwhite placeholder:font-normal placeholder:font-dm placeholder:text-sm py-2 pl-2' />
                 <HiMagnifyingGlass className='absolute top-1/2 -translate-y-1/2 right-4  text-2xl'/>
             </div>
             <Flex className='w-1/5 items-center gap-x-10 justify-end'>
                 <Flex className='gap-x-2.5'>
-                    <Link onClick={()=>handleBreadCrumb("Sign Up")} to="/sign-up">
+                    <Link onClick={()=>handleBreadCrumb("Sign up")} to="/sign-up">
                     <BsFillPersonFill/>
                     </Link>
                     <Link onClick={()=>handleBreadCrumb("Login")} to="/login">

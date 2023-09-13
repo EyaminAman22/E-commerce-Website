@@ -14,7 +14,7 @@ const Login = () => {
       <Container>
         {/* Top and Head part */}
         <SubHeading className="text-49 pb-2.5" text="Login"/>
-        <Flex className="mb-32"> <Link className='mr-2' to={pageName=="Home"?"/":`${pageName.toLowerCase()}`}>{pageName}</Link>\ <Breadcrumb>{window.location.pathname.replace(("/"),(" ")).replace(("-"),(" "))}</Breadcrumb>
+        <Flex className="mb-32"> <Link className='mr-2' to={pageName=="Home"?"/":`/${pageName.toLowerCase().replace((" "),("-"))}`}>{pageName}</Link>\ <Breadcrumb>{window.location.pathname.replace(("/"),(" ")).replace(("-"),(" "))}</Breadcrumb>
         </Flex>
         <p className='font-dm font-normal text-base mb-28 leading-8 text-grey-white w-1/2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
 
